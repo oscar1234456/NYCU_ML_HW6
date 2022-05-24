@@ -1,4 +1,5 @@
 import numpy as np
+from dataloader.dataloader import image_loader
 
 # load images data
 # design kernel (with announcement)
@@ -7,3 +8,11 @@ import numpy as np
 # using kmeans function to get the clustering number
 # plot the heatmaps
 
+
+pic, height, weight = image_loader("image1.png")  # pic:(10000, 3)
+
+
+
+
+
+print()

@@ -9,7 +9,7 @@ def image_loader(filename, filepath = FILEPATH):
     # each pixel in the image should be treated as a data point
     pic = cv2.imread(filepath + filename) # pic: (H:100*W:100*Color:3)
     res = pic.reshape(10000, 3)
-    print()
+    return res, pic.shape[0], pic.shape[1]
 
 
 if __name__ == "__main__":
