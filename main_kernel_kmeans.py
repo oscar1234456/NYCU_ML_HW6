@@ -3,6 +3,8 @@ from dataloader.dataloader import image_loader
 from kernel.kernel import defined_kernel
 
 # config
+from kmeans.kmeans import kmeans
+
 gamma_s = 1e-3
 gamma_c = 1e-3
 
@@ -14,6 +16,7 @@ pic, height, weight = image_loader("image1.png")  # pic:(10000, 3)
 gram = defined_kernel(pic, gamma_s, gamma_c)
 
 # kmeans function (diff types initialization)
+notation = kmeans(gram, 3)
 # using kmeans function to get the clustering number
 # plot the heatmaps
 
